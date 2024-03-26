@@ -1,1 +1,21 @@
 /*  your css code here. If applicable */
+#container {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+/* .one {
+	display:flax;
+	justify-content: center;
+} */
+
+.code{
+	width:40px;
+	height: 40px;
+	margin: 0 1px;
+	text-align: center;
+	border-color:#f5f5f5;
+	font-size: 28px;
+	border-radius: 4px;
+}
