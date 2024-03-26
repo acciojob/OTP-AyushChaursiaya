@@ -23,16 +23,16 @@
 </style>
 </head>
 <body>
-	<h1 id="verification_heading">Verify Your Account</h1>
-	<h2 id="verification_subtext">Enter the OTP sent to your phone</h2>
-	<div class="code-container">
-	  <input type="text" class="code" maxlength="1">
-	  <input type="text" class="code" maxlength="1">
-	  <input type="text" class="code" maxlength="1">
-	  <input type="text" class="code" maxlength="1">
-	  <input type="text" class="code" maxlength="1">
-	  <input type="text" class="code" maxlength="1">
-	</div>
+<h1 id="verification_heading">OTP Verification</h1>
+<h2 id="verification_subtext">Enter the OTP sent to your phone</h2>
+<div class="code-container">
+  <input type="text" class="code" maxlength="1">
+  <input type="text" class="code" maxlength="1">
+  <input type="text" class="code" maxlength="1">
+  <input type="text" class="code" maxlength="1">
+  <input type="text" class="code" maxlength="1">
+  <input type="text" class="code" maxlength="1">
+</div>
 
 <script>
 const inputs = document.querySelectorAll('.code');
@@ -50,8 +50,15 @@ inputs.forEach((input, index) => {
       }
     }
   });
+
+  input.addEventListener('keydown', (event) => {
+    if (event.key === 'Backspace' && input.value.length === 0) {
+      if (index > 0) {
+        inputs[index - 1].focus();
+      }
+    }
+  });
 });
-</script>
 </body>
 
 </html>
