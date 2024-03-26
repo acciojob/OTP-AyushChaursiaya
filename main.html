@@ -4,39 +4,36 @@
 
 <head>
 	<!-- <link rel="stylesheet" href="styles.css"> -->
-	<style>
-	#code-container {
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
-}
-.code{
-	width:40px;
-	height: 40px;
-	margin: 0 1px;
-	text-align: center;
-	border-color:#f5f5f5;
-	font-size: 28px;
-	border-radius: 4px;
-}</style>
+<style>
+  /* Add your CSS styles here */
+  .code-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .code {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<div id="code-container">
-		<div id="one">
-			<h3>Verify Your Account</h3>
-			<input type="text" class="code" maxlength="1" onclick="">
-			<input type="text" class="code" maxlength="1" onclick="">
-			<input type="text" class="code" maxlength="1" onclick="">
-			<input type="text" class="code" maxlength="1" onclick="">
-			<input type="text" class="code" maxlength="1" onclick="">
-			<input type="text" class="code" maxlength="1" onclick="">
-			<input type="text" class="code" maxlength="1" onclick="">
-		</div>
+	<h1 id="verification_heading">OTP Verification</h1>
+	<h2 id="verification_subtext">Enter the OTP sent to your phone</h2>
+	<div class="code-container">
+	  <input type="text" class="code" maxlength="1">
+	  <input type="text" class="code" maxlength="1">
+	  <input type="text" class="code" maxlength="1">
+	  <input type="text" class="code" maxlength="1">
+	  <input type="text" class="code" maxlength="1">
+	  <input type="text" class="code" maxlength="1">
 	</div>
-    <!-- <script type="text/javascript" src="./script.js">
-</script> -->
+
 <script>
 const inputs = document.querySelectorAll('.code');
 
@@ -53,7 +50,8 @@ inputs.forEach((input, index) => {
       }
     }
   });
-});</script>
+});
+</script>
 </body>
 
 </html>
