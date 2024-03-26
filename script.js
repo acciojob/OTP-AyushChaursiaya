@@ -2,7 +2,7 @@
 
 const inputs = document.querySelectorAll('.code');
 
-inputs.forEach((input, index) => {
+inputs.forEach(('input', index) => {
   input.addEventListener('input', (event) => {
     const value = event.target.value;
     if (value.length === 1) {
